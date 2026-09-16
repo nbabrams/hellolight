@@ -6,7 +6,7 @@ Static site. No build step — GitHub Pages serves the files as-is.
 - `index.html` — homepage
 - `styles.css` — all styles (brand tokens at the top of the file)
 - `main.js` — sticky nav, mobile menu, reveal-on-scroll, footer year
-- `assets/` — images, video, logos (home/, case-study/AJP/, team/)
+- `assets/` — drop images here (see placeholders referenced in `index.html`)
 - `CNAME` — custom domain for GitHub Pages
 
 ## Deploy to GitHub Pages
@@ -19,7 +19,10 @@ Static site. No build step — GitHub Pages serves the files as-is.
 5. Keep the Webflow site live until DNS has propagated, then cancel the plan.
 
 ## Before launch — TODO
-- [ ] Point the **support the work** button (`data-donate`) at your giving page
-- [ ] Wire the newsletter `<form action>` to your provider (Mailchimp / Buttondown / Formspree)
-- [ ] Optional: add an Adobe Fonts kit for Neue Haas Grotesk Display and the `--wordmark` variable picks it up
-- [ ] Add an `og:image` (a 1200×630 crop of the hero banner works)
+- [x] Donate → `donate.html` (RaiseDonors embed via The Cause)
+- [x] Newsletter → mailto connect@hellolight.org
+- [x] Team bios + links
+- [x] og:image (`assets/og-image.jpg`), favicons
+- [x] Brand film embedded from YouTube (youtu.be/FOsRgqL8DLk)
+- [ ] Optional: Adobe Fonts kit for Neue Haas Grotesk Display (`--wordmark` picks it up)
+- [ ] DNS + custom domain (steps above)

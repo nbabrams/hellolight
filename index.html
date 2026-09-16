@@ -8,6 +8,7 @@
   <meta property="og:title" content="Hello Light">
   <meta property="og:description" content="A network of creatives amplifying the work of underdog nonprofits, at no cost to them.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.hellolight.org/assets/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -26,6 +27,16 @@
       <a href="case-study.html">case study</a>
       <a href="#contact">contact</a>
     </nav>
+    <a class="nav__donate" href="donate.html">donate <span>(tax deductible)</span></a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+    <a href="#what-we-do">what we do</a>
+    <a href="team.html">team</a>
+    <a href="case-study.html">case study</a>
+    <a href="#contact">contact</a>
+    <a href="donate.html" class="gold">donate</a>
+  </nav>
     <a class="nav__donate" href="#support">donate <span>(tax deductible)</span></a>
     <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span>
@@ -143,19 +154,13 @@
       <div class="support__ask">
         <p class="eyebrow">support</p>
         <p class="lede">This work is carried by a volunteer team. If it resonates with you, you’re welcome to help it continue.</p>
-        <!-- Point this at your giving page (The Cause / Givebutter / etc.) -->
-        <a class="btn btn--filled" href="#" data-donate>support the work</a>
+        <a class="btn btn--filled" href="donate.html">support the work</a>
       </div>
       <div class="support__news" id="contact">
         <p class="eyebrow">stay in the loop</p>
         <p class="muted">Project insights, behind the scenes, and nonprofit impact updates. A few times a year.</p>
-        <!-- Wire `action` to your newsletter provider (Mailchimp / Buttondown / Formspree). -->
-        <form class="newsletter" action="#" method="post">
-          <label class="sr-only" for="email">Email address</label>
-          <input id="email" name="email" type="email" placeholder="email address" required autocomplete="email">
-          <button type="submit">subscribe <span aria-hidden="true">→</span></button>
-        </form>
-        <p class="muted small">Or say hello: <a href="mailto:hello@hellolight.org">hello@hellolight.org</a></p>
+        <a class="btn" href="mailto:connect@hellolight.org?subject=Keep%20me%20in%20the%20loop">keep me in the loop</a>
+        <p class="muted small">Or just say hello: <a href="mailto:connect@hellolight.org">connect@hellolight.org</a></p>
       </div>
     </section>
 
@@ -164,13 +169,14 @@
   <footer class="footer">
     <p class="verse">“He himself was not the light; he came only as a witness to the light.”<br><span>John 1:8</span></p>
     <div class="footer__row">
-      <a class="wordmark" href="#top"><img class="footer__logo" src="assets/home/hello-light-logo-horizontal-dark.svg" alt="hello light"></a>
+      <a class="wordmark" href="index.html"><img class="footer__logo" src="assets/home/hello-light-logo-horizontal-dark.svg" alt="hello light"></a>
       <nav class="footer__links" aria-label="Footer">
         <a href="#what-we-do">what we do</a>
         <a href="team.html">team</a>
         <a href="case-study.html">case study</a>
         <a href="#contact">contact</a>
-        <a href="#support">donate</a>
+        <a href="faq.html">faq</a>
+        <a href="donate.html">donate</a>
       </nav>
       <div class="footer__social">
         <a href="https://www.instagram.com/_hello_light" rel="noopener" target="_blank">instagram</a>

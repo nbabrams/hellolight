@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alabaster Jar Project — Hello Light</title>
   <meta name="description" content="Creating a brand worthy of their impact. Hello Light's 2024 partnership with Alabaster Jar Project.">
-  <meta property="og:image" content="assets/home/Hello-Light-Alabaster-Jar-Project-Hero-Banner.jpg">
+  <meta property="og:image" content="https://www.hellolight.org/assets/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -24,6 +24,16 @@
       <a href="case-study.html" aria-current="page">case study</a>
       <a href="index.html#contact">contact</a>
     </nav>
+    <a class="nav__donate" href="donate.html">donate <span>(tax deductible)</span></a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+    <a href="index.html#what-we-do">what we do</a>
+    <a href="team.html">team</a>
+    <a href="case-study.html">case study</a>
+    <a href="index.html#contact">contact</a>
+    <a href="donate.html" class="gold">donate</a>
+  </nav>
     <a class="nav__donate" href="index.html#support">donate <span>(tax deductible)</span></a>
     <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
   </header>
@@ -142,10 +152,8 @@
         <p>A brand film and interview series shot with survivors, staff, and board — the “why” in their own words.</p>
       </div>
       <div class="grid-1">
-        <figure>
-          <video controls preload="none" playsinline poster="assets/case-study/AJP/Video-Production-01.jpg">
-            <source src="assets/case-study/AJP/AJP-It-Take-A-Community-1080.mp4" type="video/mp4">
-          </video>
+        <figure class="embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/FOsRgqL8DLk?rel=0&modestbranding=1" title="Alabaster Jar Project — It Takes a Community" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </figure>
       </div>
       <div class="grid-2 square">
@@ -208,7 +216,7 @@
     <section class="cs-next">
       <p class="lede">Every year, one nonprofit. If you know one that should be next — or you’d like to help this continue — we’d love to hear from you.</p>
       <div class="hero__ctas">
-        <a class="btn" href="mailto:hello@hellolight.org">say hello</a>
+        <a class="btn" href="mailto:connect@hellolight.org">say hello</a>
         <a class="btn" href="index.html#support">support the work</a>
       </div>
     </section>
@@ -224,7 +232,8 @@
         <a href="team.html">team</a>
         <a href="case-study.html">case study</a>
         <a href="index.html#contact">contact</a>
-        <a href="index.html#support">donate</a>
+        <a href="faq.html">faq</a>
+        <a href="donate.html">donate</a>
       </nav>
       <div class="footer__social">
         <a href="https://www.instagram.com/_hello_light" rel="noopener" target="_blank">instagram</a>
